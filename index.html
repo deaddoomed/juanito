@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TE QUEREMOS JUANITO</title>
+    <script src="video.js"></script>
 </head>
 
 <body style="background-image: url('src/bunkers.jpg');">
-    <div onmouseenter="document.getElementById('video').muted=false" style="display: flex; justify-content: center; position: relative; top: -120px;">
-        <video id="video" width="1280" height="960" controls autoplay muted>
+    <div onmouseenter="play_with_sound(document.getElementById('video'))" style="display: flex; justify-content: center; position: relative; top: -120px;">
+        <video id="video" width="1280" height="960" controls>
             <source src="src/bunkers.mp4" type="video/mp4">
         </video>
     </div>
